@@ -1,8 +1,9 @@
 {
-  "name": "Wiki Beta",
+  "name": "QuantBe",
   "logo": {
     "dark": "/logo/dark.svg",
-    "light": "/logo/light.svg"
+    "light": "/logo/light.svg",
+    "href": "https://www.quantbe.com"
   },
   "favicon": "/favicon.svg",
   "colors": {
