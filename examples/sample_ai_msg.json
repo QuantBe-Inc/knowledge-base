@@ -1,0 +1,73 @@
+[
+    {
+        "inputs": {
+            "question": "display Apple stock prices, and then show SMA"
+        },
+        "outputs": {
+            "chat": "To display Apple stock prices with SMA, please specify the time range you're interested in.",
+            "completeFlag": "N",
+            "execute": "",
+            "retrievedInfo": {
+                "systemFunction": "controlStockChart",
+                "systemTasks": "\"[{'task': 'displayPrice', 'parameters': {'ticker': 'AAPL', 'startDate': 'Please provide start date in YYYYMMDD format', 'endDate': 'Please provide end date in YYYYMMDD format'}}, {'task': 'showIndicator', 'parameters': {'ticker': 'AAPL', 'indicator': 'SMA', 'startDate': 'Please provide start date in YYYYMMDD format', 'endDate': 'Please provide end date in YYYYMMDD format'}}]\""
+            }
+        }
+    },
+    {
+        "inputs": {
+            "question": "last year"
+        },
+        "outputs": {
+            "chat": "Displaying Apple's stock prices and SMA indicator for the last year.",
+            "completeFlag": "Y",
+            "execute": {
+                "systemFunction": "controlStockChart",
+                "systemTasks": [
+                    {
+                        "parameters": {
+                            "adjust": false,
+                            "endDate": "20231230",
+                            "frequency": "Daily",
+                            "startDate": "20221230",
+                            "ticker": "AAPL",
+                            "volume": false
+                        },
+                        "task": "displayPrice"
+                    },
+                    {
+                        "parameters": {
+                            "dataType": "default",
+                            "indicator": "SMA",
+                            "period": "default"
+                        },
+                        "task": "showIndicator"
+                    }
+                ]
+            },
+            "retrievedInfo": {
+                "systemFunction": "controlStockChart",
+                "systemTasks": [
+                    {
+                        "parameters": {
+                            "adjust": false,
+                            "endDate": "20231230",
+                            "frequency": "Daily",
+                            "startDate": "20221230",
+                            "ticker": "AAPL",
+                            "volume": false
+                        },
+                        "task": "displayPrice"
+                    },
+                    {
+                        "parameters": {
+                            "dataType": "default",
+                            "indicator": "SMA",
+                            "period": "default"
+                        },
+                        "task": "showIndicator"
+                    }
+                ]
+            }
+        }
+    }
+]
