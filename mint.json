@@ -62,12 +62,8 @@
       "pages": ["doc_scheduler/code", "doc_scheduler/settings"]
     },
     {
-      "group": "Endpoint Examples",
-      "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/delete"
-      ]
+      "group": "Trading Terms",
+      "pages": ["trading-terms/pattern_candle", "trading-terms/pattern_classic"]
     }
   ],
   "footerSocials": {

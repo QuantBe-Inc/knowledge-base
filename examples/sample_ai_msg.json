@@ -1,3 +1,4 @@
+## Control Stock Chart and add indicators
 [
     {
         "inputs": {
@@ -37,8 +38,12 @@
                     {
                         "parameters": {
                             "dataType": "default",
+                            "endDate": "20231230",
                             "indicator": "SMA",
-                            "period": "default"
+                            "name": "",
+                            "period": "default",
+                            "startDate": "20221230",
+                            "ticker": "AAPL"
                         },
                         "task": "showIndicator"
                     }
@@ -61,10 +66,192 @@
                     {
                         "parameters": {
                             "dataType": "default",
+                            "endDate": "20231230",
                             "indicator": "SMA",
-                            "period": "default"
+                            "name": "",
+                            "period": "default",
+                            "startDate": "20221230",
+                            "ticker": "AAPL"
                         },
                         "task": "showIndicator"
+                    }
+                ]
+            }
+        }
+    }
+] 
+
+ 
+
+## Add Data in Data Library 
+
+[
+    {
+        "inputs": {
+            "question": "Add a function to track the daily opening prices in my strategy for the past 30 days."
+        },
+        "outputs": {
+            "chat": "Adding the daily opening prices to your strategy for the past 30 days.",
+            "completeFlag": "Y",
+            "execute": {
+                "systemFunction": "getDataFunction",
+                "systemTasks": [
+                    {
+                        "parameters": {
+                            "adjusted": true,
+                            "dataCategory": "Market Data",
+                            "dataOutputName": "default",
+                            "dataType": "Open",
+                            "dateRange": "30 Days",
+                            "dateStartTime": "0day 0hour 0min",
+                            "dateType": "range",
+                            "frequency": "daily"
+                        },
+                        "task": "getDataMarket"
+                    }
+                ]
+            },
+            "retrievedInfo": {
+                "systemFunction": "getDataFunction",
+                "systemTasks": [
+                    {
+                        "parameters": {
+                            "adjusted": true,
+                            "dataCategory": "Market Data",
+                            "dataOutputName": "default",
+                            "dataType": "Open",
+                            "dateRange": "30 Days",
+                            "dateStartTime": "0day 0hour 0min",
+                            "dateType": "range",
+                            "frequency": "daily"
+                        },
+                        "task": "getDataMarket"
+                    }
+                ]
+            }
+        }
+    }
+] 
+
+## Candle pattern 
+
+[
+    {
+        "inputs": {
+            "question": "I want to include in my strategy a function to track shooting star patterns \nin the last six months."
+        },
+        "outputs": {
+            "chat": "Please specify the frequency for tracking 'Shooting Star' patterns over the last six months.",
+            "completeFlag": "N",
+            "execute": "Null",
+            "retrievedInfo": {
+                "systemFunction": "candlePattern",
+                "systemTasks": "\"[{'task': 'candlePattern', 'parameters': {'patternName': 'Shooting Star', 'dateRange': '6 Months'}}]\""
+            }
+        }
+    },
+    {
+        "inputs": {
+            "question": "I want to include in my strategy a function to track shooting star patterns \nin the last six months at daily frequency"
+        },
+        "outputs": {
+            "chat": "Tracking 'Shooting Star' candlestick patterns over the last six months at a daily frequency.",
+            "completeFlag": "Y",
+            "execute": {
+                "systemFunction": "candlePattern",
+                "systemTasks": [
+                    {
+                        "parameters": {
+                            "adjusted": true,
+                            "dateRange": "6 Months",
+                            "dateStartTime": "0day 0hour 0min",
+                            "dateType": "range",
+                            "frequency": "daily",
+                            "patternName": "Shooting Star",
+                            "timeRef": "default"
+                        },
+                        "task": "candlePattern"
+                    }
+                ]
+            },
+            "retrievedInfo": {
+                "systemFunction": "candlePattern",
+                "systemTasks": [
+                    {
+                        "parameters": {
+                            "adjusted": true,
+                            "dateRange": "6 Months",
+                            "dateStartTime": "0day 0hour 0min",
+                            "dateType": "range",
+                            "frequency": "daily",
+                            "patternName": "Shooting Star",
+                            "timeRef": "default"
+                        },
+                        "task": "candlePattern"
+                    }
+                ]
+            }
+        }
+    }
+] 
+
+## Classic pattern 
+
+[
+    {
+        "inputs": {
+            "question": "Can you add a function to my strategy to identify head and shoulders patterns over the last three months?"
+        },
+        "outputs": {
+            "chat": "Could you please specify the frequency for the data points? Choose between '60min' or 'daily'.",
+            "completeFlag": "N",
+            "execute": "Null",
+            "retrievedInfo": {
+                "systemFunction": "classicPattern",
+                "systemTasks": "\"[{'task': 'classicPattern', 'parameters': {'patternName': 'Head and Shoulders', 'dateRange': '3 Months'}}]\""
+            }
+        }
+    },
+    {
+        "inputs": {
+            "question": "daily"
+        },
+        "outputs": {
+            "chat": "I am adding a strategy component to identify 'Head and Shoulders' patterns over the last three months on daily charts.",
+            "completeFlag": "Y",
+            "execute": {
+                "systemFunction": "classicPattern",
+                "systemTasks": [
+                    {
+                        "parameters": {
+                            "adjusted": true,
+                            "dateRange": "3 Months",
+                            "dateStartTime": "0day 0hour 0min",
+                            "dateType": "range",
+                            "frequency": "daily",
+                            "patternName": "Head and Shoulders",
+                            "timeRefEnd": "default",
+                            "timeRefStart": "default"
+                        },
+                        "task": "classicPattern"
+                    }
+                ]
+            },
+            "retrievedInfo": {
+                "systemFunction": "classicPattern",
+                "systemTasks": [
+                    {
+                        "parameters": {
+                            "adjusted": true,
+                            "dateRange": "3 Months",
+                            "dateStartTime": "0day 0hour 0min",
+                            "dateType": "range",
+                            "frequency": "daily",
+                            "patternName": "Head and Shoulders",
+                            "timeRefEnd": "default",
+                            "timeRefStart": "default"
+                        },
+                        "task": "classicPattern"
                     }
                 ]
             }
