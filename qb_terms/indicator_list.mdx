@@ -1,1 +1,286 @@
-sdjf lasj las df sdf 
+---
+title: 'Technical Indicator'
+description: 'Learn how to navigate market dynamics'
+---
+
+Stock technical indicators are mathematical calculations that help traders analyze past market trends and predict future movements in the stock price. 
+Technical indicators are classified into different categories based on their functionality. 
+The following sections provide an explanation for each category and examples of the functions in each category.
+
+## Overlap Studies
+
+Overlap studies are technical indicators that use price data to determine potential levels of support and resistance. 
+These studies are used to identify price trends and potential turning points in the market.
+
+- #### Bollinger Bands
+    
+    Bollinger Bands are a type of statistical chart characterizing the prices and volatility over time of a financial instrument or commodity, 
+    using a formulaic method propounded by John Bollinger in the 1980s.
+
+    <ResponseField name="Data Type" type="OHLCV" default="Close" required>
+        This is a two crow
+    </ResponseField>
+  
+    
+- DEMA: Double Exponential Moving Average
+    
+    `DEMA = DEMA(close, timeperiod=30)`
+    
+    The Double Exponential Moving Average (DEMA) is a technical indicator that is used to identify trends.
+    
+- EMA: Exponential Moving Average
+    
+    `EMA = EMA(close, timeperiod=30)`
+    
+    The Exponential Moving Average (EMA) is a technical indicator that is used to identify trends.
+    
+- KAMA: Kaufman Adaptive Moving Average
+    
+    `KAMA = KAMA(close, timeperiod=30)`
+    
+    The Kaufman Adaptive Moving Average (KAMA) is a technical indicator that adjusts the moving average period based on market volatility.
+    
+- MIDPRICE: Midpoint Price over period
+    
+    `MIDPRICE = MIDPRICE(high, low, timeperiod=14)`
+    
+    The Midpoint Price over period is a technical indicator that calculates the average price of a security over a given period of time.
+    
+- SAR: Parabolic SAR
+    
+    `SAR = SAR(high, low, acceleration=0.02, maximum=0.2)`
+    
+    The Parabolic SAR is a technical indicator that is used to identify potential reversals in the market.
+    
+- SMA: Simple Moving Average
+    
+    `SMA = SMA(close, timeperiod=30)`
+    
+    The Simple Moving Average (SMA) is a technical indicator that is used to identify trends.
+    
+- T3: Triple Exponential Moving Average (T3)
+    
+    `T3 = T3(close, timeperiod=5, vfactor=0.7)`
+    
+    The Triple Exponential Moving Average (T3) is a technical indicator that is used to identify trends.
+    
+- TEMA: Triple Exponential Moving Average
+    
+    `TEMA = TEMA(close, timeperiod=30)`
+    
+    The Triple Exponential Moving Average (TEMA) is a technical indicator that is used to identify trends.
+    
+- TRIMA: Triangular Moving Average
+    
+    `TRIMA = TRIMA(close, timeperiod=30)`
+    
+    The Triangular Moving Average (TRIMA) is a technical indicator that is used to identify trends.
+    
+- WMA: Weighted Moving Average
+    
+    `WMA = WMA(close, timeperiod=30)`
+    
+    The Weighted Moving Average (WMA) is a technical indicator that is used to identify trends.
+    
+
+## Momentum Indicator
+
+Momentum indicators are technical indicators that measure the rate of change in a stock's price over time. These indicators are used to determine the strength or weakness of a stock's price movement.
+
+Momentum Indicator functions include:
+
+- ADX: Average Directional Movement Index
+    
+    `ADX = ADX(high, low, close, timeperiod=14)`
+    
+    The Average Directional Movement Index (ADX) is a technical indicator that is used to identify trends.
+    
+- ADXR: Average Directional Movement Index Rating
+    
+    `ADXR = ADXR(high, low, close, timeperiod=14)`
+    
+    The Average Directional Movement Index Rating (ADXR) is a technical indicator that is used to identify trends.
+    
+- APO: Absolute Price Oscillator
+    
+    `APO = APO(close, fastperiod=12, slowperiod=26, matype=0)`
+    
+    The Absolute Price Oscillator (APO) is a technical indicator that is used to identify trends.
+    
+- AROON: Aroon
+    
+    `aroon_down, aroon_up = AROON(high, low, timeperiod=14)`
+    
+    The Aroon is a technical indicator that is used to identify trends.
+    
+- AROONOSC: Aroon Oscillator
+    
+    `AROONOSC = AROONOSC(high, low, timeperiod=14)`
+    
+    The Aroon Oscillator is a technical indicator that is used to identify trends.
+    
+- BOP: Balance Of Power
+    
+    `BOP = BOP(open, high, low, close)`
+    
+    The Balance of Power (BOP) is a technical indicator that is used to identify trends.
+    
+- CCI: Commodity Channel Index
+    
+    `CCI = CCI(high, low, close, timeperiod=14)`
+    
+    The Commodity Channel Index (CCI) is a technical indicator that is used to identify trends.
+    
+- CMO: Chande Momentum Oscillator
+    
+    `CMO = CMO(close, timeperiod=14)`
+    
+    The Chande Momentum Oscillator (CMO) is a technical indicator that is used to identify trends.
+    
+- DX: Directional Movement Index
+    
+    `DX = DX(high, low, close, timeperiod=14)`
+    
+    The Directional Movement Index (DX) is a technical indicator that is used to identify trends.
+    
+- MACD: Moving Average Convergence/Divergence
+    
+    `macd, macdsignal, macdhist = MACD(close, fastperiod=12, slowperiod=26, signalperiod=9)`
+    
+    The Moving Average Convergence/Divergence (MACD) is a technical indicator that is used to identify trends.
+    
+- PPO: Percentage Price Oscillator
+    
+    `PPO = PPO(close, fastperiod=12, slowperiod=26, matype=0)`
+    
+    The Percentage Price Oscillator (PPO) is a technical indicator that is used to identify trends.
+    
+- ROC: Rate of change : ((price/prevPrice)-1)*100
+    
+    `ROC = ROC(close, timeperiod=10)`
+    
+    The Rate of Change (ROC) is a technical indicator that is used to identify trends.
+    
+- RSI: Relative Strength Index
+    
+    `RSI = RSI(close, timeperiod=14)`
+    
+    The Relative Strength Index (RSI) is a technical indicator that is used to identify trends.
+    
+- STOCH: Stochastic
+    
+    `slowk, slowd = STOCH(high, low, close, fastk_period=5, slowk_period=3, slowk_matype=0, slowd_period=3, slowd_matype=0)`
+    
+    The Stochastic is a technical indicator that is used to identify trends.
+    
+- STOCHF: Stochastic Fast
+    
+    `fastk, fastd = STOCHF(high, low, close, fastk_period=5, fastd_period=3, fastd_matype=0)`
+    
+    The Stochastic Fast is a technical indicator that is used to identify trends.
+    
+- STOCHRSI: Stochastic Relative Strength Index
+    
+    `fastk, fastd = STOCHRSI(close, timeperiod=14, fastk_period=5, fastd_period=3, fastd_matype=0)`
+    
+    The Stochastic Relative Strength Index is a technical indicator that is used to identify trends.
+    
+- TRIX: 1-day Rate-Of-Change (ROC) of a Triple Smooth EMA
+    
+    `TRIX = TRIX(close, timeperiod=30)`
+    
+    The 1-day Rate-Of-Change (ROC) of a Triple Smooth EMA (TRIX) is a technical indicator that is used to identify trends.
+    
+- ULTOSC: Ultimate Oscillator
+    
+    `ULTOSC = ULTOSC(high, low, close, timeperiod1=7, timeperiod2=14, timeperiod3=28)`
+    
+    The Ultimate Oscillator is a technical indicator that is used to identify trends.
+    
+- WILLR: Williams' %R
+    
+    `WILLR = WILLR(high, low, close, timeperiod=14)`
+    
+    Williams' %R is a technical indicator that is used to identify trends.
+    
+
+## Volume Indicators
+
+Volume indicators are technical indicators that use the amount of shares traded to determine the strength or weakness of a stock's price movement. These indicators are used to identify potential trends and turning points in the market.
+
+Volume Indicators functions include:
+
+- AD: Chaikin A/D Line
+    
+    `AD = AD(high, low, close, volume)`
+    
+    The Chaikin A/D Line is a technical indicator that is used to identify trends.
+    
+- ADOSC: Chaikin A/D Oscillator
+    
+    `ADOSC = ADOSC(high, low, close, volume, fastperiod=3, slowperiod=10)`
+    
+    The Chaikin A/D Oscillator is a technical indicator that is used to identify trends.
+    
+- OBV: On Balance Volume
+    
+    `OBV = OBV(close, volume)`
+    
+    The On Balance Volume is a technical indicator that is used to identify trends.
+    
+
+## Price Transform
+
+Price transform indicators are technical indicators that use price data to transform the data into a different form. These indicators are used to identify potential trends and turning points in the market.
+
+Price Transform functions include:
+
+- AVGPRICE: Average Price
+    
+    `AVGPRICE = AVGPRICE(open, high, low, close)`
+    
+    Average Price is a technical indicator that is used to identify trends.
+    
+- MEDPRICE: Median Price
+    
+    `MEDPRICE = MEDPRICE(high, low)`
+    
+    Median Price is a technical indicator that is used to identify trends.
+    
+- TYPPRICE: Typical Price
+    
+    `TYPPRICE = TYPPRICE(high, low, close)`
+    
+    Typical Price is a technical indicator that is used to identify trends.
+    
+- WCLPRICE: Weighted Close Price
+    
+    `WCLPRICE = WCLPRICE(high, low, close)`
+    
+    Weighted Close Price is a technical indicator that is used to identify trends.
+    
+
+## Volatility Indicators
+
+Volatility indicators are technical indicators that use price data to determine the level of volatility in the market. These indicators are used to identify potential trends and turning points in the market.
+
+Volatility Indicators functions include:
+
+- ATR: Average True Range
+    
+    `ATR = ATR(high, low, close, timeperiod=14)`
+    
+    The Average True Range is a technical indicator that is used to identify trends.
+    
+- NATR: Normalized Average True Range
+    
+    `NATR = NATR(high, low, close, timeperiod=14)`
+    
+    The Normalized Average True Range is a technical indicator that is used to identify trends.
+    
+- TRANGE: True Range
+    
+    `TRANGE = TRANGE(high, low, close)`
+    
+    True Range is a technical indicator that is used to identify trends.
+    
