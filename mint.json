@@ -1,5 +1,5 @@
 {
-  "name": "QuantBe",
+  "name": "QuantBe Docs",
   "logo": {
     "dark": "/logo/dark.svg",
     "light": "/logo/light.svg",
@@ -31,8 +31,8 @@
   },
   "tabs": [
     {
-      "name": "Trading Terms",
-      "url": "trading-terms"
+      "name": "Technical Tools",
+      "url": "qb_terms"
     }
   ],
   "modeToggle": {
@@ -47,23 +47,23 @@
   "navigation": [
     {
       "group": "Get Started",
-      "pages": ["documentation/introduction", "documentation/quickstart", "documentation/development"]
+      "pages": ["documentation/introduction", "documentation/quickstart"]
     },
     {
       "group": "Editor",
-      "pages": ["doc_editor/code", "doc_editor/settings"]
+      "pages": ["doc_editor/strategy_func", "doc_editor/pattern_func"]
     },
     {
       "group": "Tester",
-      "pages": ["doc_tester/code", "doc_tester/settings"]
+      "pages": ["doc_tester/backtest"]
     },
     {
       "group": "Scheduler",
-      "pages": ["doc_scheduler/code", "doc_scheduler/settings"]
+      "pages": ["doc_scheduler/livetrading"]
     },
     {
-      "group": "Trading Terms",
-      "pages": ["trading-terms/pattern_candle", "trading-terms/pattern_classic"]
+      "group": "Technical Tools",
+      "pages": ["qb_terms/indicator_list", "qb_terms/pattern_candle", "qb_terms/pattern_classic"]
     }
   ],
   "footerSocials": {
