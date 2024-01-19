@@ -1,23 +1,63 @@
 ---
 title: 'Strategy Functions'
-description: 'Display inline code and code blocks'
+description: 'Financial Excellence Through Strategic Brilliance.'
 icon: 'code'
 ---
 
-### Example
+### Introduction
 
-To denote a `word` or `phrase` as code, enclose it in backticks (`).
-
-```
-To denote a `word` or `phrase` as code, enclose it in backticks (`).
-```
-Use [fenced code blocks](https://www.markdownguide.org/extended-syntax/#fenced-code-blocks) 
-by enclosing code in three backticks and follow the leading ticks with the programming language of your snippet to get syntax highlighting. Optionally, you can also write the name of your code after the programming language.
+Stock strategy functions involve defining specific rules and criteria for buying or selling securities based on various technical or fundamental factors. These functions guide traders in making informed decisions, setting entry and exit points, and managing risk within their investment approach. Ultimately, stock strategy functions aim to optimize trading performance and achieve financial objectives in the dynamic and unpredictable stock market.
 
 
 ## Get Data
 
+
+The "Get Data" function retrieves historical pricing information for a specific stock, offering a chronological record of its past market performance. This data includes opening and closing prices, high and low values, trading volumes, and other relevant metrics, enabling users to analyze trends, make informed investment decisions, and conduct thorough market research.
+
+<Frame className="mx-auto">
+    <img style={{height: "490px"}} src="/images/Strategy_Function/Get_data.png" /> 
+</Frame>
+
 ### Input Parameter Example
+
+<ResponseField name="Data Type" type="" required>
+  Choose from OHLCV (Open, Close, High, Low & Volume)
+</ResponseField>
+
+<ResponseField name="Indicator" type="" required>
+  Select an indicator from the available list.
+</ResponseField>
+
+<ResponseField name="Frequency" type="" required>
+  Select a time frequency from the available list.
+</ResponseField>
+
+<ResponseField name="Split Adjusted" type="" >
+  Choose between split-adjusted or current market price.
+</ResponseField>
+
+<ResponseField name="Time Selection Mode" type="" >
+  Choose between Point or Range.
+  Select between Choose Specific Time or Choose Defined Time
+</ResponseField>
+
+<ResponseField name="Time Length" type="" required>
+  Select Hour and Minutes from the dropdown list. Max defaults is 250 days. 
+</ResponseField>
+
+<ResponseField name="Lookup Direction" type="" >
+  Retrieving financial data both backward and forward in time.
+</ResponseField>
+
+<ResponseField name="Data Name" type="" required>
+  Users are required to provide a name for their data.
+</ResponseField>
+
+## DONE FOR NOW........
+
+
+
+
 
 <ResponseField name="navigation" type="Navigation[]" required>
   An array of groups with all the pages within that group
