@@ -53,42 +53,111 @@ The "Get Data" function retrieves historical pricing information for a specific 
   Users are required to provide a name for their data.
 </ResponseField>
 
-## DONE FOR NOW........
 
+## Compare
 
+The Compare function simplifies the analysis of two values within a financial stock perspective. This efficient tool allows users to effortlessly assess and contrast key metrics, empowering them to make informed decisions in the dynamic landscape of the stock market.
 
+<Frame className="mx-auto">
+    <img style={{height: "490px"}} src="/images/Strategy_Function/Compare.png" /> 
+</Frame>
 
+<ResponseField name="Compare" type="" >
+  Assess by comparing two references based on its value.
+</ResponseField>
 
-<ResponseField name="navigation" type="Navigation[]" required>
-  An array of groups with all the pages within that group
-  <Expandable title="Navigation">
-    <ResponseField name="group" type="string">
-    The name of the group.
+<ResponseField name="Reference 1&2" type="" required>
+  Users are required to input values, and they have the option to either manually enter the values or select from a dataset saved in the database.
+</ResponseField>
 
-    Example: `Settings`
+<ResponseField name="Relation" type="" required>
+  Choose from a mathematical relation 
+</ResponseField>
 
+## Math/Stats
+
+Our Mathematics and Statistics function encompasses a diverse range of capabilities, including fundamental operations like addition, as well as advanced statistical analyses such as standard deviation and linear regression. Whether you're calculating basic arithmetic sums or delving into sophisticated statistical modeling, this versatile function provides the tools you need for comprehensive mathematical and statistical analyses.
+
+<Frame className="mx-auto">
+    <img style={{height: "490px"}} src="/images/Strategy_Function/Math_Stats.png" /> 
+</Frame>
+
+<ResponseField name="Function" type="" required>
+  Choose from a mathematical function (Add, Standard Deviation, Beta, Linear Regression & Exp)
+</ResponseField>
+
+<Tabs>
+  <Tab title="EXP">
+    <ResponseField name="Input" type="" required>
+    Select from a dataset saved in the database.
     </ResponseField>
-    <ResponseField name="pages" type="string[]">
-    The relative paths to the markdown files that will serve as pages.
 
-    Example: `["customization", "page"]`
-
+    <ResponseField name="Data Name" type="" required>
+    Users are required to provide a name for their data.
     </ResponseField>
 
-  </Expandable>
-</ResponseField>
+  </Tab>
+  <Tab title="ADD">
+    <ResponseField name="Input 1&2" type="" required>
+    Users are required to input values, and they have the option to either manually enter the values or select from a dataset saved in the database.
+    </ResponseField>
+
+    <ResponseField name="Data Name" type="" required>
+    Users are required to provide a name for their data.
+    </ResponseField>
 
 
-<ResponseField name="name" type="string" required>
-Name of your project. Used for the global title.
 
-Example: `mintlify`
+  </Tab>
+  <Tab title="STD">
+    <ResponseField name="Input" type="" required>
+    Select from a dataset saved in the database.
+    </ResponseField>
 
-</ResponseField>
+    <ResponseField name="Output" type="" required>
+    Select from a single value or a list of values
+    </ResponseField>
 
-<ResponseField name="backgroundImage" type="string">
-  A background image to be displayed behind every page. See example with
-  [Infisical](https://infisical.com/docs) and [FRPC](https://frpc.io).
-</ResponseField>
+    <ResponseField name="Data Name" type="" required>
+    Users are required to provide a name for their data.
+    </ResponseField>
+
+  </Tab>
+  <Tab title="BETA">
+    <ResponseField name="Input 1&2" type="" required>
+    Select from a dataset saved in the database.
+    </ResponseField>
+
+    <ResponseField name="Output" type="" required>
+    Select from a single value or a list of values
+    </ResponseField>
+
+    <ResponseField name="Data Name" type="" required>
+    Users are required to provide a name for their data.
+    </ResponseField>
+
+  </Tab>
+  <Tab title="LINEARREG">
+    <ResponseField name="Input" type="" required>
+    Select from a dataset saved in the database.
+    </ResponseField>
+
+    <ResponseField name="Output" type="" required>
+    Select from a single value or a list of values
+    </ResponseField>
+
+    <ResponseField name="Data Name" type="" required>
+    Users are required to provide a name for their data.
+    </ResponseField>
+  </Tab>
+</Tabs>
+
+
+
+
+
+
+
+
 
 
