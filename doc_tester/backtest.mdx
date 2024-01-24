@@ -1,7 +1,88 @@
 ---
 title: 'History BackTest'
-description: 'Run historical backtest'
+description: '"Back Test" is your key to confident evaluation. Simulate chosen approach over historical market by selecting a strategy, market and stocks, setting the analysis frequency, and define your preferred time frame. Witness the past unfold in real-time, enabling you to refine and optimize your investment approach for future success. Back Test empowers you to make informed decisions, providing a clear understanding of how your strategies would have performed in the past, helping you shape a more resilient and profitable investment future.'
 icon: 'code'
 ---
 
-## Run Back Test
+<Frame className="mx-auto">
+    <img style={{height: "400px"}} src="/images/BackTest.png" /> 
+</Frame>
+
+## Simple Steps
+Initiate a backtest by following these steps.
+<Steps>
+  <Step title="Create Your Strategy">
+    Begin by crafting one or more strategies through the "Create New Strategy" option. Define your unique approach to stock analysis and save it for future use.
+  </Step>
+  <Step title="Navigate to the Dashboard">
+    Head to the Dashboard and locate the "strategy" tab. Here, you'll find a list of your created strategies.
+  </Step>
+  <Step title="Select Strategy for Back Testing">
+    Choose the strategy you wish to backtest from the available options. This is the foundation for evaluating its historical performance.
+  </Step>
+  <Step title="Access Back Test Section">
+    Once your strategy is selected, navigate to the "Back Test" section. Here, you'll find tools to set parameters for your analysis.
+  </Step>
+  <Step title="Configure Back Test Settings">
+    In the "Back Test" section, customize your analysis by specifying the market (e.g., NASDAQ), selecting stocks (e.g., AAPL, TSLA), setting the analysis frequency, and defining the historical data range.
+  </Step>
+  <Step title="Adjust Portfolio Configuration">
+    Enhance your portfolio by entering an initial cash amount, selecting a benchmark (e.g., cash), and deciding on buy/sell execution options.
+  </Step>
+  <Step title="Run Your Back Test">
+    Hit the "Run Back Test" button to initiate the analysis. Watch as QuantBe processes your chosen strategy, providing valuable insights into its historical performance.
+  </Step>
+  <Step title="Explore Analysis Charts">
+    After completion, delve into the insightful analysis charts. Review the performance chart, buying/selling trends, underwater assets, top drawdown periods, Sharpe ratio, and detailed performance statistics.
+  </Step>
+</Steps>
+
+
+## Input Parameter 
+### Back Test Setting
+<ResponseField name="Strategy" required>
+Select a predefined strategy from the available list.
+</ResponseField>
+
+<ResponseField name="Market" required>
+Select a stock market from the available list.
+</ResponseField>
+
+<ResponseField name="Ticker" required>
+Select a ticker from the available list.
+</ResponseField>
+
+<ResponseField name="Frequency" required>
+Select a time frequency from the available list.
+</ResponseField>
+
+<ResponseField name="Start at" required>
+Select a start date and time from the calendar.
+</ResponseField>
+
+<ResponseField name="End at" required>
+Select a end date and time from the calendar.
+</ResponseField>
+
+### Portfolio Configuration
+<ResponseField name="Initial Cash" required>
+Input an initial cash amount for this back test.
+</ResponseField>
+
+<ResponseField name="Benchmark" required>
+Select a benchmark.
+</ResponseField>
+
+<ResponseField name="Buy Executive" required>
+<Accordion title="Optimize your buying strategy effortlessly with Buy Exec. Choose between two options:">
+  1. **Available Cash(%):** Allocate a specified percentage of your available cash for each buying execution.
+  2. **Fixed Cash Amount:** Specify a precise fixed cash amount for individual buying transactions.
+</Accordion>
+</ResponseField>
+
+<ResponseField name="Sell Executive" required>
+<Accordion title="Refine your selling strategy using the Sell Exec feature. Choose between two options:">
+  1. **Holdings(%):** Input the percentage of your portfolio holdings for each selling transaction.
+  2. **Fixed Cash Amount:**  Specify a precise fixed cash amount for each selling transaction.
+</Accordion>
+</ResponseField>
