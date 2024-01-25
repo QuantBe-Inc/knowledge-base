@@ -1,7 +1,64 @@
 ---
 title: 'Live Trading Signal'
-description: 'schedule strategy run with realtime data'
+description: 'Live Trading enables real-time buying and selling of financial instruments. Users name sessions, choose a strategy, select stocks, and set the time frequency. The platform features an Auto Ending Scheduler for convenient session management. The page displays a graphical stock market performance summary and a Buy/Sell table with key details. Dropdown filters for strategy, ticker, and signals enhance data analysis. Experience precise execution and real-time decision-making with Live Trading.'
 icon: 'code'
 ---
 
-## Run Back Test
+<Frame className="mx-auto">
+    <img style={{height: "400px"}} src="/images/LiveTrading.png" /> 
+</Frame>
+
+## Simple Steps
+Initiate a live trading by following these steps.
+<Steps>
+  <Step title="Create a New Strategy">
+    Begin by crafting one or more strategies under "Create New Strategy" on the Dashboard page.
+  </Step>
+  <Step title="Initiate Live Trading Schedule">
+    Head to the Dashboard and click on "Schedule Live Trading" to add a schedule.
+  </Step>
+  <Step title="Configure Schedule Details">
+    Complete the necessary details for your live trading session, including the session name, selected strategy, market, targeted stock, and preferred time frequency.
+  </Step>
+   <Step title="Activate Auto Ending Scheduler">
+    Enable the Auto Ending Scheduler for convenient session management. You can do this by clicking the designated button or specifying the start and end times manually.
+  </Step>
+  <Step title="Explore Live Trading Performance">
+    Once scheduled, explore the corresponding stock market chart and Buy/Sell table on the right side of the page. The chart provides a visual representation of your chosen strategy's impact on the market, while the table details key information such as time, ticker, signal, price, and strategy.
+  </Step>
+</Steps>
+
+
+
+## Input Parameter 
+### Scheduler Setting
+<ResponseField name="Name" required>
+Define a label for this Live Trading.
+</ResponseField>
+
+<ResponseField name="Strategy" required>
+Select a predefined strategy from the available list.
+</ResponseField>
+
+<ResponseField name="Market" required>
+Select a stock market from the available list.
+</ResponseField>
+
+<ResponseField name="Ticker" required>
+Select a ticker from the available list.
+</ResponseField>
+
+<ResponseField name="Frequency" required>
+Select a time frequency from the available list.
+</ResponseField>
+
+### Auto Ending Scheduler
+Users can activate Auto Ending Scheduler with a button click or set start and end times manually for precise session control.
+
+<ResponseField name="Start" required>
+Select a start date and time from the calendar.
+</ResponseField>
+
+<ResponseField name="End" required>
+Select a end date and time from the calendar.
+</ResponseField>
