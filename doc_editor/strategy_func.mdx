@@ -1,54 +1,163 @@
 ---
 title: 'Strategy Functions'
-description: 'Display inline code and code blocks'
+description: 'Financial Excellence Through Strategic Brilliance.'
 icon: 'code'
 ---
 
-### Example
+### Introduction
 
-To denote a `word` or `phrase` as code, enclose it in backticks (`).
-
-```
-To denote a `word` or `phrase` as code, enclose it in backticks (`).
-```
-Use [fenced code blocks](https://www.markdownguide.org/extended-syntax/#fenced-code-blocks) 
-by enclosing code in three backticks and follow the leading ticks with the programming language of your snippet to get syntax highlighting. Optionally, you can also write the name of your code after the programming language.
+Stock strategy functions involve defining specific rules and criteria for buying or selling securities based on various technical or fundamental factors. These functions guide traders in making informed decisions, setting entry and exit points, and managing risk within their investment approach. Ultimately, stock strategy functions aim to optimize trading performance and achieve financial objectives in the dynamic and unpredictable stock market.
 
 
 ## Get Data
 
+
+The "Get Data" function retrieves historical pricing information for a specific stock, offering a chronological record of its past market performance. This data includes opening and closing prices, high and low values, trading volumes, and other relevant metrics, enabling users to analyze trends, make informed investment decisions, and conduct thorough market research.
+
+<Frame className="mx-auto">
+    <img style={{height: "490px"}} src="/images/Strategy_Function/Get_data.png" /> 
+</Frame>
+
 ### Input Parameter Example
 
-<ResponseField name="navigation" type="Navigation[]" required>
-  An array of groups with all the pages within that group
-  <Expandable title="Navigation">
-    <ResponseField name="group" type="string">
-    The name of the group.
+<ResponseField name="Data Type" type="" required>
+  Choose from OHLCV (Open, Close, High, Low & Volume)
+</ResponseField>
 
-    Example: `Settings`
+<ResponseField name="Indicator" type="" required>
+  Select an indicator from the available list.
+</ResponseField>
 
+<ResponseField name="Frequency" type="" required>
+  Select a time frequency from the available list.
+</ResponseField>
+
+<ResponseField name="Split Adjusted" type="" >
+  Choose between split-adjusted or current market price.
+</ResponseField>
+
+<ResponseField name="Time Selection Mode" type="" >
+  Choose between Point or Range.
+  Select between Choose Specific Time or Choose Defined Time
+</ResponseField>
+
+<ResponseField name="Time Length" type="" required>
+  Select Hour and Minutes from the dropdown list. Max defaults is 250 days. 
+</ResponseField>
+
+<ResponseField name="Lookup Direction" type="" >
+  Retrieving financial data both backward and forward in time.
+</ResponseField>
+
+<ResponseField name="Data Name" type="" required>
+  Users are required to provide a name for their data.
+</ResponseField>
+
+
+## Compare
+
+The Compare function simplifies the analysis of two values within a financial stock perspective. This efficient tool allows users to effortlessly assess and contrast key metrics, empowering them to make informed decisions in the dynamic landscape of the stock market.
+
+<Frame className="mx-auto">
+    <img style={{height: "490px"}} src="/images/Strategy_Function/Compare.png" /> 
+</Frame>
+
+<ResponseField name="Compare" type="" >
+  Assess by comparing two references based on its value.
+</ResponseField>
+
+<ResponseField name="Reference 1&2" type="" required>
+  Users are required to input values, and they have the option to either manually enter the values or select from a dataset saved in the database.
+</ResponseField>
+
+<ResponseField name="Relation" type="" required>
+  Choose from a mathematical relation 
+</ResponseField>
+
+## Math/Stats
+
+Our Mathematics and Statistics function encompasses a diverse range of capabilities, including fundamental operations like addition, as well as advanced statistical analyses such as standard deviation and linear regression. Whether you're calculating basic arithmetic sums or delving into sophisticated statistical modeling, this versatile function provides the tools you need for comprehensive mathematical and statistical analyses.
+
+<Frame className="mx-auto">
+    <img style={{height: "490px"}} src="/images/Strategy_Function/Math_Stats.png" /> 
+</Frame>
+
+<ResponseField name="Function" type="" required>
+  Choose from a mathematical function (Add, Standard Deviation, Beta, Linear Regression & Exp)
+</ResponseField>
+
+<Tabs>
+  <Tab title="EXP">
+    <ResponseField name="Input" type="" required>
+    Select from a dataset saved in the database.
     </ResponseField>
-    <ResponseField name="pages" type="string[]">
-    The relative paths to the markdown files that will serve as pages.
 
-    Example: `["customization", "page"]`
-
+    <ResponseField name="Data Name" type="" required>
+    Users are required to provide a name for their data.
     </ResponseField>
 
-  </Expandable>
-</ResponseField>
+  </Tab>
+  <Tab title="ADD">
+    <ResponseField name="Input 1&2" type="" required>
+    Users are required to input values, and they have the option to either manually enter the values or select from a dataset saved in the database.
+    </ResponseField>
+
+    <ResponseField name="Data Name" type="" required>
+    Users are required to provide a name for their data.
+    </ResponseField>
 
 
-<ResponseField name="name" type="string" required>
-Name of your project. Used for the global title.
 
-Example: `mintlify`
+  </Tab>
+  <Tab title="STD">
+    <ResponseField name="Input" type="" required>
+    Select from a dataset saved in the database.
+    </ResponseField>
 
-</ResponseField>
+    <ResponseField name="Output" type="" required>
+    Select from a single value or a list of values
+    </ResponseField>
 
-<ResponseField name="backgroundImage" type="string">
-  A background image to be displayed behind every page. See example with
-  [Infisical](https://infisical.com/docs) and [FRPC](https://frpc.io).
-</ResponseField>
+    <ResponseField name="Data Name" type="" required>
+    Users are required to provide a name for their data.
+    </ResponseField>
+
+  </Tab>
+  <Tab title="BETA">
+    <ResponseField name="Input 1&2" type="" required>
+    Select from a dataset saved in the database.
+    </ResponseField>
+
+    <ResponseField name="Output" type="" required>
+    Select from a single value or a list of values
+    </ResponseField>
+
+    <ResponseField name="Data Name" type="" required>
+    Users are required to provide a name for their data.
+    </ResponseField>
+
+  </Tab>
+  <Tab title="LINEARREG">
+    <ResponseField name="Input" type="" required>
+    Select from a dataset saved in the database.
+    </ResponseField>
+
+    <ResponseField name="Output" type="" required>
+    Select from a single value or a list of values
+    </ResponseField>
+
+    <ResponseField name="Data Name" type="" required>
+    Users are required to provide a name for their data.
+    </ResponseField>
+  </Tab>
+</Tabs>
+
+
+
+
+
+
+
+
 
 
