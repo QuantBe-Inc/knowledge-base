@@ -12,7 +12,7 @@ Welcome to the core of QuantBe's analysis toolkit – Pattern Functions. This es
 Candle Patterns are formed by one or multiple candlesticks, offering a visual representation of market sentiment. These patterns serve as powerful tools for identifying potential trend reversals or continuations.
 
 <Frame className="mx-auto">
-    <img style={{height: "400px"}} src="/images/CandlePattern.png" /> 
+    <img style={{height: "400px"}} src="/images/Candle_Pattern_2.svg" /> 
 </Frame>
 
 ### Input Parameter 
@@ -22,7 +22,7 @@ Choose a candle pattern from available list.
 
 <ResponseField name="Frequency" required>
 Select a time frequency from the available list.
-
+</ResponseField>
 
 
 <ResponseField name="Time Selection Mode" required>
@@ -36,20 +36,19 @@ Select a time frequency from the available list.
     <ResponseField name="Range">
     + Start at Specific Time 
     + Start at Defined Time
+    <br />
+    + Backward Period
+    + Forward Period
+    + End at Defined Time
 
     </ResponseField>
 
   </Expandable>
 </ResponseField>
-</ResponseField>
 
 
 <ResponseField name="Time Length" required>
 Select Hour and Minutes from the dropdown list. Max defaults is 250 days.
-</ResponseField>
-
-<ResponseField name="Lookup Direction" required>
-Retrieving historical data both backward and forward in time.
 </ResponseField>
 
 <ResponseField name="Data Name" required>
@@ -63,7 +62,7 @@ Users are required to provide a name for their data
 Classic Patterns represent long-term trend charts, capturing extended market movements over time. These patterns provide a broader perspective on the overall market direction.
 
 <Frame className="mx-auto">
-    <img style={{height: "400px"}} src="/images/ClassicPattern.png" /> 
+    <img style={{height: "400px"}} src="/images/Classic_Pattern_2.svg" /> 
 </Frame>
 
 ### Input Parameter 
@@ -73,6 +72,8 @@ Choose a classic pattern from available list.
 
 <ResponseField name="Frequency" required>
 Select a time frequency from the available list.
+</ResponseField>
+
 <ResponseField name="Time Selection Mode" required>
   Select a time point or time range
   <Expandable title="Time Selection Mode">
@@ -84,22 +85,22 @@ Select a time frequency from the available list.
     <ResponseField name="Range">
     + Start at Specific Time 
     + Start at Defined Time
+    <br />
+    + Backward Period
+    + Forward Period
+    + End at Defined Time
 
     </ResponseField>
 
   </Expandable>
 </ResponseField>
-</ResponseField>
+
 
 
 
 
 <ResponseField name="Time Length" required>
 Select Hour and Minutes from the dropdown list. Max defaults is 250 days.
-</ResponseField>
-
-<ResponseField name="Lookup Direction" required>
-Retrieving historical data both backward and forward in time.
 </ResponseField>
 
 <ResponseField name="Data Name" required>
@@ -121,7 +122,7 @@ User assigned name for the pattern's conclusion point in time.
 The Trending function within QuantBe's Pattern Functions empowers investors to analyze and interpret market trends with precision. By providing granular control over various parameters, users can tailor their trend analysis to suit specific preferences and requirements.
 
 <Frame className="mx-auto">
-    <img style={{height: "400px"}} src="/images/Trending-.png" /> 
+    <img style={{height: "400px"}} src="/images/Trending_2.svg" /> 
 </Frame>
 
 ### Input Parameter 
@@ -139,6 +140,7 @@ Choose a mode from vailable lists.
 
 <ResponseField name="Fuzziness" required>
 Adjust the fuzziness from weak to strong.
+</ResponseField>
 
 <ResponseField name="Time Selection Mode" required>
   Select a time point or time range
@@ -151,19 +153,18 @@ Adjust the fuzziness from weak to strong.
     <ResponseField name="Range">
     + Start at Specific Time 
     + Start at Defined Time
+    <br />
+    + Backward Period
+    + Forward Period
+    + End at Defined Time
 
     </ResponseField>
 
   </Expandable>
 </ResponseField>
-</ResponseField>
 
 <ResponseField name="Time Length" required>
 Select Hour and Minutes from the dropdown list. Max defaults is 250 days.
-</ResponseField>
-
-<ResponseField name="Lookup Direction" required>
-Retrieving historical data both backward and forward in time.
 </ResponseField>
 
 <ResponseField name="Start Time Ref" required>
@@ -186,7 +187,7 @@ User assigned name for the duration of the pattern, indicating the overall time 
 The Crossover function within QuantBe's Pattern Functions offers a powerful tool for investors to analyze and capitalize on market trends by identifying key points of intersection between different datasets. This function provides users with customizable parameters to fine-tune their analysis and create actionable signals.
 
 <Frame className="mx-auto">
-    <img style={{height: "400px"}} src="/images/Crossover-.png" /> 
+    <img style={{height: "400px"}} src="/images/Crossover_2.svg" /> 
 </Frame>
 
 ### Input Parameter 
@@ -205,6 +206,7 @@ Choose a predefined data as a base line.
 
 <ResponseField name="Trend Line" required>
 Choose a predefined data as a trend line.
+</ResponseField>
 
 <ResponseField name="Time Selection Mode" required>
   Select a time point or time range
@@ -217,19 +219,18 @@ Choose a predefined data as a trend line.
     <ResponseField name="Range">
     + Start at Specific Time 
     + Start at Defined Time
-
+    <br />
+    + Backward Period
+    + Forward Period
+    + End at Defined Time
     </ResponseField>
 
   </Expandable>
 </ResponseField>
-</ResponseField>
+
 
 <ResponseField name="Time Length" required>
 Select Hour and Minutes from the dropdown list. Max defaults is 250 days.
-</ResponseField>
-
-<ResponseField name="Lookup Direction" required>
-Retrieving historical data both backward and forward in time.
 </ResponseField>
 
 <ResponseField name="Data Name" required>
