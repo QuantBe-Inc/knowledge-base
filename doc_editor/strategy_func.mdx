@@ -9,19 +9,31 @@ icon: 'code'
 Stock strategy functions involve defining specific rules and criteria for buying or selling securities based on various technical or fundamental factors. These functions guide traders in making informed decisions, setting entry and exit points, and managing risk within their investment approach. Ultimately, stock strategy functions aim to optimize trading performance and achieve financial objectives in the dynamic and unpredictable stock market.
 
 ## Start
+The Start function serves as the designated entry for users initiating the process of strategy creation and backtesting. It offers a quick and convenient way to set default frequencies and add new data effortlessly using the New Data button, streamlining the start of the strategy development journey with efficiency.<br />
 
-The "Start" function swiftly extracts and customizes stock market data, with a 'New Data' button for easy selection. Choose between Market data or Indicator tabs, set preferred time frames, and define settings for an optimal strategy. The Data Library on the dashboard efficiently organizes named datasets, functions, and indicators, providing a centralized hub for streamlined financial analysis.
+**Defualt Frequency**<br />
+The default frequency in the “Start” component refers to a predefined frequency, such as 5 minutes, 15 minutes, 30 minutes, 60 minutes, or daily. By setting the default frequency, the frequency value in the “New Data” feature and subsequent functions would automatically synchronize with the preset default frequency. 
 
 <Frame className="mx-auto">
-    <img style={{height: "490px"}} src="/images/Strategy_Function/Start_MarketData.svg" /> 
+    <img style={{weidth:"600px height:400px"}} src="/images/Strategy_Function/Start.png" /> 
+</Frame>
+
+**Functionality of the “New Data” Button**<br />
+Accessible from both the Start Component and Data Library, the New Data button on quantbe effortlessly leads users to the Data Setting Board. With Market and Indicator tabs, users can swiftly choose between market data or indicators, set preferred time frames, and define settings for an optimal strategy.
+<Frame className="mx-auto">
+    <img style={{weidth:"600px height:400px"}} src="/images/Strategy_Function/NewData.png" /> 
+</Frame>
+
+<Frame className="mx-auto">
+    <img style={{weidth:"600px height:500px"}} src="/images/Strategy_Function/Start_Market.png" /> 
+</Frame>
+
+<Frame className="mx-auto">
+    <img style={{weidth:"600px height:500px"}} src="/images/Strategy_Function/Start_Indicator.png" /> 
 </Frame>
 
 
-<Frame className="mx-auto">
-    <img style={{height: "490px"}} src="/images/Strategy_Function/Start_Indicator.svg" /> 
-</Frame>
-
-### Input Parameter Example
+### Input Parameter 
 <Tabs>
   <Tab title="Market Data">
    Access historical market data.
@@ -104,7 +116,7 @@ The "Start" function swiftly extracts and customizes stock market data, with a '
 The "Get Data" function retrieves historical pricing information for a specific stock, offering a chronological record of its past market performance. This data includes opening and closing prices, high and low values, trading volumes, and other relevant metrics, enabling users to analyze trends, make informed investment decisions, and conduct thorough market research.
 
 <Frame className="mx-auto">
-    <img style={{height: "400px"}} src="/images/Strategy_Function/Get_Data_2.svg" /> 
+    <img style={{height: "400px"}} src="/images/Strategy_Function/GetData.png" /> 
 </Frame>
 
 ### Input Parameter Example
@@ -189,7 +201,7 @@ The "Get Data" function retrieves historical pricing information for a specific 
 The Compare function simplifies the analysis of two values within a financial stock perspective. This efficient tool allows users to effortlessly assess and contrast key metrics, empowering them to make informed decisions in the dynamic landscape of the stock market.
 
 <Frame className="mx-auto">
-    <img style={{height: "300px"}} src="/images/Strategy_Function/Compare.svg" /> 
+    <img style={{height: "300px"}} src="/images/Strategy_Function/Compare.png" /> 
 </Frame>
 
 <ResponseField name="Compare" type="" >
@@ -209,7 +221,7 @@ The Compare function simplifies the analysis of two values within a financial st
 Our Mathematics and Statistics function encompasses a diverse range of capabilities, including fundamental operations like addition, as well as advanced statistical analyses such as standard deviation and linear regression. Whether you're calculating basic arithmetic sums or delving into sophisticated statistical modeling, this versatile function provides the tools you need for comprehensive mathematical and statistical analyses.
 
 <Frame className="mx-auto">
-    <img style={{height: "400px"}} src="/images/Strategy_Function/Math.svg" /> 
+    <img style={{height: "300px"}} src="/images/Strategy_Function/Math.png" /> 
 </Frame>
 
 <ResponseField name="Function" type="" required>
