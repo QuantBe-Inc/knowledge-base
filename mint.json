@@ -52,12 +52,16 @@
       "pages": ["doc_editor/strategy_func", "doc_editor/pattern_func", "doc_editor/generate_strategy", "doc_editor/validation_mode"]
     },
     {
+      "group": "doc_editor/strategy_func",
+      "pages": ["doc_editor/strategy_func/Get Data", "doc_editor/strategy_func/Compare"]
+    },
+    {
       "group": "Tester",
       "pages": ["doc_tester/backtest"]
     },
     {
       "group": "Scheduler",
-      "pages": ["doc_scheduler/livetrading"]
+      "pages": ["doc_scheduler/livetrading"] 
     },
     {
       "group": "Technical Tools",
