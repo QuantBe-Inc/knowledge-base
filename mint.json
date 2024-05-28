@@ -49,7 +49,7 @@
     },
     {
       "group": "Editor",
-      "pages": ["doc_editor/strategy_func", "doc_editor/pattern_func"]
+      "pages": ["doc_editor/strategy_func", "doc_editor/pattern_func", "doc_editor/generate_strategy", "doc_editor/validation_mode"]
     },
     {
       "group": "Tester",
