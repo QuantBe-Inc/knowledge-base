@@ -47,21 +47,29 @@
       "group": "Get Started",
       "pages": ["documentation/introduction", "documentation/quickstart"]
     },
+
     {
       "group": "Editor",
-      "pages": ["doc_editor/strategy_func", "doc_editor/pattern_func", "doc_editor/generate_strategy", "doc_editor/validation_mode"]
-    },
-    {
-      "group": "doc_editor/strategy_func",
-      "pages": ["doc_editor/strategy_func/Get Data", "doc_editor/strategy_func/Compare"]
+      "pages": [
+        {
+          "group": "Strategy Functions",
+          "pages": ["doc_editor/strategy_func", "doc_editor/get_data","doc_editor/compare","doc_editor/math"]
+        }, 
+        {
+          "group": "Pattern Functions",
+          "pages": ["doc_editor/pattern_func", "doc_editor/find_candle_pattern","doc_editor/find_classic_pattern","doc_editor/crossover"]
+        }, 
+        
+        "doc_editor/generate_strategy", 
+        "doc_editor/validation_mode"]
     },
     {
       "group": "Tester",
-      "pages": ["doc_tester/backtest"]
+      "pages": ["doc_tester/backtest","doc_tester/analyzer"]
     },
     {
       "group": "Scheduler",
-      "pages": ["doc_scheduler/livetrading"] 
+      "pages": ["doc_scheduler/livetrading","doc_scheduler/watcher"] 
     },
     {
       "group": "Technical Tools",

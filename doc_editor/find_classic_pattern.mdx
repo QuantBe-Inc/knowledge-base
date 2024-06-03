@@ -1,10 +1,66 @@
 ---
-title: 'Trending'
-description: 'Tailor Your Success with Pattern function.'
-icon: 'chart-scatter'
+title: 'Find Classic Pattern'
+description: 'Navigate Market Trends with Classic Patterns.'
+icon: 'chart-line-up-down'
 ---
 
+
 ## Introduction
+Classic Patterns represent long-term trend charts, capturing extended market movements over time. These patterns provide a broader perspective on the overall market direction.
+
+<Frame className="mx-auto">
+    <img style={{height: "400px"}} src="/images/Classic.png" /> 
+</Frame>
+
+### Input Parameter 
+<ResponseField name="Pattern" required>
+Choose a classic pattern from available list.
+</ResponseField>
+
+<ResponseField name="Frequency" required>
+Select a time frequency from the available list.
+</ResponseField>
+
+<ResponseField name="Time Selection Mode" required>
+  Select a time point or time range
+  <Expandable title="Time Selection Mode">
+    <ResponseField name="Point">
+    + Choose Specific Time 
+    + Choose Defined Time
+
+    </ResponseField>
+    <ResponseField name="Range">
+    + Start at Specific Time 
+    + Start at Defined Time
+    <br />
+    + Backward Period
+    + Forward Period
+    + End at Defined Time
+
+    </ResponseField>
+
+  </Expandable>
+</ResponseField>
+
+
+<ResponseField name="Time Length" required>
+Select Hour and Minutes from the dropdown list. Max defaults is 250 days.
+</ResponseField>
+
+<ResponseField name="Data Name" required>
+Users are required to provide a name for their data
+</ResponseField>
+
+<ResponseField name="Start Time Ref" required>
+User assigned name for the pattern's initiation point.
+</ResponseField>
+
+<ResponseField name="End Time Ref" required>
+User assigned name for the pattern's conclusion point in time.
+</ResponseField>
+
+
+## Trending
 The Trending function within Pattern Functions empowers users to analyze and interpret market trends with precision. By providing granular control over various parameters, users can tailor their trend analysis to suit specific preferences and requirements.
 <Frame className="mx-auto">
     <img style={{height: "400px"}} src="/images/Trending.png" /> 

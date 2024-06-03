@@ -1,0 +1,91 @@
+---
+title: 'Get Data'
+description: 'Access Market Data from Any Time Point for Strategic Contributions.'
+icon: 'table'
+---
+
+
+## Introduction 
+
+The "Get Data" function retrieves historical pricing information for a specific stock, offering a chronological record of its past market performance. This data includes opening and closing prices, high and low values, trading volumes, and other relevant metrics, enabling users to analyze trends, make informed investment decisions, and conduct thorough market research.
+
+<Frame className="mx-auto">
+    <img style={{height: "400px"}} src="/images/Strategy_Function/GetData.png" /> 
+</Frame>
+
+### Input Parameter Example
+<Tabs>
+  <Tab title="Market Data">
+   Access historical market data.
+
+   <ResponseField name="Data Type" type="" required>
+  Choose from OHLCV (Open, Close, High, Low & Volume)
+   </ResponseField>
+
+   <ResponseField name="Frequency" type="" required>
+  Select a time frequency from the available list.
+   </ResponseField>
+
+   <ResponseField name="Split Adjusted" type="" >
+  Choose between split-adjusted or current market price.
+   </ResponseField>
+
+  </Tab>
+
+  <Tab title="Indicator">
+  Utilize technical indicators.
+
+  <ResponseField name="Indicator" type="" required>
+  Select an indicator from the available list.
+  </ResponseField>
+
+  <ResponseField name="Data Type" type="" required>
+  Choose from OHLCV (Open, Close, High, Low & Volume)
+  </ResponseField>
+
+  <ResponseField name="Period" type="" required>
+  Emter a number to adjust analysis period.
+  </ResponseField>
+
+  <ResponseField name="Frequency" type="" required>
+  Select a time frequency from the available list.
+  </ResponseField>
+
+  <ResponseField name="Split Adjusted" type="" >
+  Choose between split-adjusted or current market price.
+  </ResponseField>
+
+  </Tab>
+</Tabs>
+
+
+<ResponseField name="Time Selection Mode" required>
+  Select a time point or time range
+  <Expandable title="Time Selection Mode">
+    <ResponseField name="Point">
+    + Choose Specific Time 
+    + Choose Defined Time
+
+    </ResponseField>
+    <ResponseField name="Range">
+    + Start at Specific Time 
+    + Start at Defined Time
+    <br />
+    + Backward Period
+    + Forward Period
+    + End at Defined Time
+
+    </ResponseField>
+
+  </Expandable>
+</ResponseField>
+
+<ResponseField name="Time Length" type="" required>
+  Select Hour and Minutes from the dropdown list. Max defaults is 250 days. 
+</ResponseField>
+
+
+<ResponseField name="Data Name" type="" required>
+  Users are required to provide a name for their data.
+</ResponseField>
+
