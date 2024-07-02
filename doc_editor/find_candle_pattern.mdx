@@ -1,0 +1,53 @@
+---
+title: 'Find Candle Pattern'
+description: 'Illuminate Market Signals: Candle Patterns Guide Your Moves.'
+icon: 'chart-candlestick'
+---
+
+## Find Candle Pattern
+Candle Patterns are formed by one or multiple candlesticks, offering a visual representation of market sentiment. These patterns serve as powerful tools for identifying potential trend reversals or continuations.
+
+<Frame className="mx-auto">
+    <img style={{height: "400px"}} src="/images/Candle.png" /> 
+</Frame>
+
+### Input Parameter 
+<ResponseField name="Pattern" required>
+Choose a candle pattern from available list.
+</ResponseField>
+
+<ResponseField name="Frequency" required>
+Select a time frequency from the available list.
+</ResponseField>
+
+
+<ResponseField name="Time Selection Mode" required>
+  Select a time point or time range
+  <Expandable title="Time Selection Mode">
+    <ResponseField name="Point">
+    + Choose Specific Time 
+    + Choose Defined Time
+
+    </ResponseField>
+    <ResponseField name="Range">
+    + Start at Specific Time 
+    + Start at Defined Time
+    <br />
+    + Backward Period
+    + Forward Period
+    + End at Defined Time
+
+    </ResponseField>
+
+  </Expandable>
+</ResponseField>
+
+
+<ResponseField name="Time Length" required>
+Select Hour and Minutes from the dropdown list. Max defaults is 250 days.
+</ResponseField>
+
+<ResponseField name="Pattern Time Ref" required>
+Users are required to provide a name for their data
+</ResponseField>
+
