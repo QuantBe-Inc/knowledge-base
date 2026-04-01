@@ -1,3 +1,11 @@
+<!-- REPO-STATUS:START -->
+## Repository Status
+
+- Status: Active retained repository
+- Role: Primary documentation repository kept after consolidation.
+- Governance files: [STATUS.md](STATUS.md), [OWNERSHIP.md](OWNERSHIP.md)
+<!-- REPO-STATUS:END -->
+
 ## Welcome to QuantBe Wiki
 
 ### Introduction
@@ -18,4 +26,3 @@ We understand that the world of stock analysis can be complex. That's why our do
 Need help or have questions? Check out our FAQ section or reach out to us through [support link/contact details]. Our team is always here to assist you in your stock analysis journey.
 
 Thank you for choosing QuantBe — your partner in navigating the stock market with confidence and clarity.
-
