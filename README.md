@@ -1,30 +1,36 @@
 <!-- REPO-STATUS:START -->
 ## Repository Status
 
-- Status: Active retained repository
-- Role: Primary documentation repository kept after consolidation.
-- Imported legacy content: QuantBe-Wiki-Mint was backed up into legacy-imports/QuantBe-Wiki-Mint.
+- Status: `Active target repository`
+- Role: Primary documentation repository retained after consolidation.
+- Consolidation scope: absorbed repositories are preserved under `imports/` (or `legacy-imports/` for documentation backups).
+- Runtime/API change from consolidation: `None`. Imported repositories were added as frozen snapshots only.
+- Validation: Legacy import path verified in the repository and push completed. No information architecture or broken-link audit was run as part of consolidation.
+- Known issues: Legacy `QuantBe-Wiki-Mint` content was backed up under `legacy-imports/QuantBe-Wiki-Mint`, but navigation, duplication cleanup, and content curation have not yet been completed.
 - Governance files: [STATUS.md](STATUS.md), [OWNERSHIP.md](OWNERSHIP.md), [MERGED_FROM.md](MERGED_FROM.md)
 <!-- REPO-STATUS:END -->
 
+# QuantBe Knowledge Base
 
-## Welcome to QuantBe Wiki
+Primary documentation repository retained after consolidation.
 
-### Introduction
+## Consolidation Summary
 
-Welcome to the QuantBe Wiki, the comprehensive guide to our powerful stock analysis tool, QuantBe. Designed for both novice traders and seasoned investors, QuantBe offers a robust platform to analyze stock market trends, make informed decisions, and uncover insights with ease.
+- Consolidation date: `2026-03-31`
+- Consolidation method: `git subtree add --squash`
+- Imported repositories are preserved under `imports/` or `legacy-imports/` for traceability.
+- No interface or API contract change was introduced by the repository consolidation step itself.
+- Validation performed: Legacy import path verified in the repository and push completed. No information architecture or broken-link audit was run as part of consolidation.
+- Known issues: Legacy `QuantBe-Wiki-Mint` content was backed up under `legacy-imports/QuantBe-Wiki-Mint`, but navigation, duplication cleanup, and content curation have not yet been completed.
 
-QuantBe is built with the belief that effective stock analysis should be accessible to everyone. Our platform combines classic pattern recognition, customizable data analysis, and advanced technical indicators to empower you in navigating the complexities of the stock market.# Mintlify Starter Kit
+## Imported Repositories
 
-### About This Repository
-This GitHub repository serves as the primary hub for all documentation related to QuantBe's functions and tools. Our aim is to provide a detailed, user-friendly guide that helps users make the most out of QuantBe's capabilities.
+| Source Repository | Imported Path | Scope |
+| --- | --- | --- |
+| QuantBe-Wiki-Mint | legacy-imports/QuantBe-Wiki-Mint | Legacy Mintlify-based documentation backup. |
 
-In this repository, you'll find extensive documentation covering every aspect of QuantBe. From detailed descriptions of each tool and function to step-by-step guides on utilizing our platform's features, we've covered everything to ensure you have a smooth experience. Whether you're exploring classic pattern analysis or delving into our advanced technical indicators, our documentation is designed to support your learning and application.
+## Governance Files
 
-We understand that the world of stock analysis can be complex. That's why our documentation is crafted with clarity and simplicity in mind. It's tailored to assist both beginners and experts alike, providing valuable insights irrespective of your trading experience. Our guides are regularly updated to reflect the latest features and enhancements in QuantBe, ensuring you're always equipped with up-to-date information.
-
-
-### Support
-Need help or have questions? Check out our FAQ section or reach out to us through [support link/contact details]. Our team is always here to assist you in your stock analysis journey.
-
-Thank you for choosing QuantBe — your partner in navigating the stock market with confidence and clarity.
+- [STATUS.md](STATUS.md)
+- [OWNERSHIP.md](OWNERSHIP.md)
+- [MERGED_FROM.md](MERGED_FROM.md)
