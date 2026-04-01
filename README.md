@@ -3,8 +3,10 @@
 
 - Status: Active retained repository
 - Role: Primary documentation repository kept after consolidation.
-- Governance files: [STATUS.md](STATUS.md), [OWNERSHIP.md](OWNERSHIP.md)
+- Imported legacy content: QuantBe-Wiki-Mint was backed up into legacy-imports/QuantBe-Wiki-Mint.
+- Governance files: [STATUS.md](STATUS.md), [OWNERSHIP.md](OWNERSHIP.md), [MERGED_FROM.md](MERGED_FROM.md)
 <!-- REPO-STATUS:END -->
+
 
 ## Welcome to QuantBe Wiki
 
